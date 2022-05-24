@@ -108,11 +108,13 @@ You can even pass a configuration for all included extensions as an object. Just
 import StarterKit from '@tiptap/starter-kit'
 
 new Editor({
-  extensions: StarterKit.configure({
-    heading: {
-      levels: [1, 2, 3],
-    },
-  }),
+  extensions: [
+    StarterKit.configure({
+      heading: {
+        levels: [1, 2, 3],
+      },
+    })
+  ],
 })
 ```
 
